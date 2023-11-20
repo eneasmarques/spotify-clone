@@ -14,7 +14,7 @@ body {
 }
 
 .logo {
-  height: 40px;
+  height: 2.5rem;
 }
 
 /* Utility Classes */
@@ -124,8 +124,13 @@ body {
   margin: auto;
 }
 
+#footer .footer-content .footer-menus {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 #footer .footer-content .footer-menu {
-  margin: 0 60px;
   list-style: none;
 }
 
@@ -174,7 +179,7 @@ body {
   width: 60%;
   display: flex;
   margin: auto;
-  padding-top: 50px;
+  padding-top: 2.5rem;
   justify-content: space-between;
   align-items: flex-end;
 
@@ -222,4 +227,103 @@ body {
 .footer-info .rights .country .brazil-flag {
   height: 20px;
   margin-left: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  #navbar .navbar-container {
+    width: 80%;
+  }
+
+  #footer .footer-content {
+    width: 80%;
+  }
+
+  .footer-info {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  /* Navbar */
+  #navbar .navbar-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #navbar .navbar-container .navbar-items .navbar-item {
+    margin-top: 1rem;
+    padding: 0 1rem;
+  }
+
+  /* Showcase */
+  #showcase .showcase-container h2 {
+    font-size: 3rem;
+    line-height: 2rem;
+  }
+
+  #showcase .showcase-container p {
+    margin: 15px 0;
+    font-size: 1.4rem;
+  }
+
+  /* Footer */
+  #footer {
+    padding: 4rem 0;
+  }
+
+  #footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  #footer .footer-content .footer-logo {
+    align-self: center;
+  }
+
+  #footer .footer-content .footer-menus {
+    display: flex;
+    margin-top: 4rem;
+    justify-content: space-around;
+  }
+
+  /* Footer Socials */
+  .socials {
+    margin-top: 3rem;
+    align-self: center;
+  }
+
+  /* Footer Info */
+  .footer-info {
+    margin-top: 4rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    width: 100%;
+  }
+  /* Footer Rights */
+  .footer-info .rights .country {
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 75%;
+  }
 }
